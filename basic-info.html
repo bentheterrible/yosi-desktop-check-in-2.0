@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Login</title>
+  </head>
+  <body>
+    <div class='header'>
+      <img class='header-logo' src='img/client-logo.svg'>
+    </div>
+    <div class='page-header'>
+      <img src='img/basic-info-icon.svg'>
+      <h1>Basic Information</h1>
+    </div>
+    <div class='page-form'>
+      <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <legend>Legend</legend>
+
+            <div class="pure-g">
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" class="pure-u-23-24" type="text">
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" class="pure-u-23-24" type="text">
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="email">E-Mail</label>
+                    <input id="email" class="pure-u-23-24" type="email" required>
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="city">City</label>
+                    <input id="city" class="pure-u-23-24" type="text">
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="state">State</label>
+                    <select id="state" class="pure-input-1-2">
+                        <option>AL</option>
+                        <option>CA</option>
+                        <option>IL</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="terms" class="pure-checkbox">
+                <input id="terms" type="checkbox"> I've read the terms and conditions
+            </label>
+
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

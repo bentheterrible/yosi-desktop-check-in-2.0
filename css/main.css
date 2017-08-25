@@ -1,0 +1,36 @@
+body {
+  font-family: helvetica neue; }
+
+.login-box {
+  width: 20em;
+  margin: auto;
+  margin-top: 100px; }
+  .login-box .login-logo {
+    text-align: center; }
+    .login-box .login-logo img {
+      height: 170px;
+      margin-bottom: 14px; }
+  .login-box .login-button {
+    margin-top: 10px;
+    text-align: right; }
+  .login-box .welcome-msg {
+    text-align: center; }
+  .login-box .instruction {
+    font-size: 18px; }
+  .login-box #email {
+    margin: auto; }
+
+.header img {
+  height: 120px;
+  margin: 40px; }
+
+.page-header {
+  text-align: center; }
+  .page-header img {
+    height: 100px; }
+
+.page-form {
+  width: 30em;
+  margin: auto; }
+
+/*# sourceMappingURL=main.css.map */
