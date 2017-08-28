@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
 <!--<![endif]-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Login</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+    <title>Basic Information</title>
   </head>
   <body>
     <div class='header'>
@@ -21,70 +27,63 @@
       <h1>Basic Information</h1>
     </div>
     <div class='page-form'>
-      <form class="pure-form pure-form-stacked" action='insurance-info.html'>
-        <fieldset>
-            <legend></legend>
+      <form class="pure-form pure-form-aligned" action='insurance-info.html'>
+        <legend></legend>
+          <fieldset>
+              <div class="pure-control-group">
+                  <label for="name">First Name</label>
+                  <input id="name" type="text" >
+              </div>
 
-            <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-1-3">
-                    <label for="first-name">First Name</label>
-                    <input id="first-name" class="pure-u-23-24" type="text">
-                </div>
+              <div class="pure-control-group">
+                  <label for="password">Last Name</label>
+                  <input id="password" >
+              </div>
 
-                <div class="pure-u-1 pure-u-md-1-3">
-                    <label for="last-name">Last Name</label>
-                    <input id="last-name" class="pure-u-23-24" type="text">
-                </div>
+              <div class="pure-control-group">
+                  <label for="email">Gender</label>
+                  <input id="email" type="radio" placeholder="Email Address">&nbsp; Male &nbsp;
+                  <input id="email" type="radio" placeholder="Email Address">&nbsp;Female &nbsp;
+              </div>
 
-                <div class="pure-u-1 pure-u-md-1-3">
-                  <div>
-                    <label for="email">Gender</label>
-                  </div>
-                  <div class='pure-g'>
-                  <div style='margin-left: 70px;' class='gender-options pure-u-1-3'>
-                    <input id="male" class="pure-u-23-24" type="radio">
-                    <div class='gender-options gender-title'>Male</div>
-                  </div>
-                  <div class='gender-options pure-u-1-3'>
-                    <input id="female" class="pure-u-23-24" type="radio">
-                    <div class='gender-options gender-title'>Female</div>
-                  </div>
-                    <div class='pure-u-1-4'></div>
-                  </div>
-                </div>
+              <div class="pure-control-group">
+                  <label for="foo">DOB</label>
+                  <input class='dob' type="text" placeholder="mm" maxlength="2" style='width: 50px;'> /
+                  <input class='dob' type="text" placeholder="dd" maxlength="2" style='width: 50px;'> /
+                  <input class='dob' type="text" placeholder="yyyy" maxlength="4" style='width: 60px;'>
+                  <!-- <span class="pure-form-message-inline">mm/dd/yyyy</span> -->
+              </div>
 
-                <div class="pure-u-1 pure-u-md-1-2">
-                    <label for="first-name">DOB</label>
-                    <div id='dob-month' class="pure-u-1-8">
-                        <input class="pure-input-1" type="text">
-                    </div>
-                    <div id='dob-day' class="pure-u-1-8">
-                        <input class="pure-input-1" type="text">
-                    </div>
-                    <div id='dob-year' class="pure-u-1-6">
-                        <input class="pure-input-1" type="text">
-                    </div>
-                </div>
-                <div class='pure-u-1 pure-u-md-1-2'></div>
+              <div class="pure-control-group">
+                  <label for="foo">Address 1</label>
+                  <input id="foo" type="text">
+              </div>
 
-                <div class='pure-u-1 pure-u-md-1-3'>
-                  <label for="Address 1">Address 1</label>
-                    <input id="address1" class="pure-u-23-24" type="text">
-                </div>
-                <div class='pure-u-1 pure-u-md-1-3'>
-                  <label for="Address 2">Address 2</label>
-                    <input id="address2" class="pure-u-23-24" type="text">
-                </div>
-                <div class='pure-u-1 pure-u-md-1-3'>
-                  <label for="Zipcode">Zipcode</label>
-                    <input id="zipcode" class="pure-u-23-24" type="text">
-                </div>
+              <div class="pure-control-group">
+                  <label for="foo">Address 2</label>
+                  <input id="foo" type="text">
+              </div>
 
-            </div>
+              <div class="pure-control-group">
+                  <label for="foo">Zipcode</label>
+                  <input id="foo" type="text">
+              </div>
 
-            <button type="submit" class="pure-button pure-button-primary">Submit</button>
-        </fieldset>
+              <div class="pure-controls">
+
+                  <button type="submit" class="pure-button pure-button-primary">Submit</button>
+              </div>
+          </fieldset>
       </form>
     </div>
+
+        <div class='footer'></div>
   </body>
+  <script>
+    $(".dob").keyup(function () {
+      if (this.value.length == this.maxLength) {
+        $(this).next('.dob').focus();
+      }
+    });
+  </script>
 </html>

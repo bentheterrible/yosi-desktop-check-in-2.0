@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+<!--<![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+    <title>Demographics</title>
+  </head>
+  <body>
+    <div class='header'>
+      <img class='header-logo' src='img/client-logo.svg'>
+    </div>
+    <div class='page-header'>
+      <img src='img/basic-info-icon.svg'>
+      <h1>Demographics</h1>
+    </div>
+    <div class='page-form'>
+      <form class="pure-form pure-form-aligned" action='emergency.html'>
+        <legend>Please fill out the following information</legend>
+          <fieldset>
+              <div class="pure-control-group">
+                  <label for="name">SSN</label>
+                  <input class='ssn' type="text" style='width:52px;' maxlength="3" placeholder="123">&nbsp;&dash;
+                  <input class='ssn' type="text" style='width: 42px;' maxlength="2" placeholder="45">&nbsp;&dash;
+                  <input class='ssn' type="text" style='width: 64px;' maxlength='4' placeholder="6789">
+              </div>
+
+              <div class="pure-control-group">
+                  <label for="password">Mobile Phone</label>
+                  <input id="password" type="text" >
+              </div>
+
+              <div class="pure-control-group">
+                  <label for="email">Martial Status</label>
+                  <input id="email" type="email" >
+              </div>
+
+              <div class="pure-control-group">
+                  <label for="foo">Ethnicity &amp; Race</label>
+                  <input id="foo" type="text" >
+              </div>
+
+              <div class="pure-controls">
+                  <button type="submit" class="pure-button pure-button-primary">Submit</button>
+              </div>
+          </fieldset>
+      </form>
+    </div>
+
+    <div class="footer"></div>
+  </body>
+  <script>
+    $(".ssn").keyup(function () {
+      if (this.value.length == this.maxLength) {
+        $(this).next('.ssn').focus();
+      }
+    });
+  </script>
+</html>

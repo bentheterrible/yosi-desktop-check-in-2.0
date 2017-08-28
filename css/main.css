@@ -36,5 +36,14 @@ body {
     margin-left: 1px; }
   .page-form .radio {
     width: 19px; }
+  .page-form .submit-btn {
+    margin-top: 20px; }
+  .page-form legend {
+    font-size: 24px;
+    font-weight: 200;
+    padding-left: 14px; }
+
+.footer {
+  height: 150px; }
 
 /*# sourceMappingURL=main.css.map */
