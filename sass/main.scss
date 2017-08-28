@@ -50,7 +50,7 @@ body {
 }
 
 .page-form {
-  width: 50em;
+  width: 35em;
   margin: auto;
 
   .gender-options {
@@ -72,10 +72,14 @@ body {
     font-size: 24px;
     font-weight: 200;
     padding-left: 14px;
-    // background: gainsboro;
+    background: #f7f7f7;
   }
-}
 
+  .button-case {
+    text-align: right !important;
+  }
+
+}
 
 .footer {
   height: 150px;

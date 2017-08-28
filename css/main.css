@@ -30,7 +30,7 @@ body {
     height: 100px; }
 
 .page-form {
-  width: 50em;
+  width: 35em;
   margin: auto; }
   .page-form .gender-titles {
     margin-left: 1px; }
@@ -41,7 +41,10 @@ body {
   .page-form legend {
     font-size: 24px;
     font-weight: 200;
-    padding-left: 14px; }
+    padding-left: 14px;
+    background: #f7f7f7; }
+  .page-form .button-case {
+    text-align: right !important; }
 
 .footer {
   height: 150px; }
