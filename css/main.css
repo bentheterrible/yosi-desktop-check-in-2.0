@@ -30,7 +30,11 @@ body {
     height: 100px; }
 
 .page-form {
-  width: 30em;
+  width: 50em;
   margin: auto; }
+  .page-form .gender-titles {
+    margin-left: 1px; }
+  .page-form .radio {
+    width: 19px; }
 
 /*# sourceMappingURL=main.css.map */

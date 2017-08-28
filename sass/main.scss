@@ -50,6 +50,17 @@ body {
 }
 
 .page-form {
-  width: 30em;
+  width: 50em;
   margin: auto;
+
+  .gender-options {
+
+  }
+  .gender-titles {
+    margin-left: 1px;
+  }
+
+  .radio {
+    width: 19px;
+  }
 }
