@@ -38,7 +38,7 @@
       </div>
         <div class='pure-header-and-form pure-u-2-3'>
           <div class='page-header'>
-            <img src='img/basic-info-icon.svg'>
+            <img src='img/demographics.svg'>
             <h1>Demographics</h1>
           </div>
           <div class='page-form'>
@@ -54,17 +54,31 @@
 
                     <div class="pure-control-group">
                         <label for="password">Mobile Phone</label>
-                        <input id="password" type="text" >
+                        <!-- <input id="password" type="text" > -->
+                        ( <input class='mobile' type="text" style='width:52px;' maxlength="3" placeholder="123"> )&nbsp;
+                        <input class='mobile' type="text" style='width: 52px;' maxlength="3" placeholder="123">&nbsp;&dash;
+                        <input class='mobile' type="text" style='width: 64px;' maxlength='4' placeholder="1234">
+                        <span class="pure-form-message-inline">This field is required</span>
                     </div>
 
                     <div class="pure-control-group">
                         <label for="email">Martial Status</label>
-                        <input id="email" type="text" >
+                        <select>
+                          <option value="single">Single</option>
+                          <option value="married">Married</option>
+                          <option value="divorced">Divorced</option>
+                          <option value="widowed">Widowed</option>
+                        </select>
                     </div>
 
                     <div class="pure-control-group">
                         <label for="foo">Ethnicity &amp; Race</label>
-                        <input id="foo" type="text" >
+                        <select>
+                          <option value="single">White</option>
+                          <option value="married">Black</option>
+                          <option value="divorced">Brown</option>
+                          <option value="widowed">Purple</option>
+                        </select>
                     </div>
 
                     <div class="pure-controls button-case">
@@ -82,6 +96,11 @@
     $(".ssn").keyup(function () {
       if (this.value.length == this.maxLength) {
         $(this).next('.ssn').focus();
+      }
+    });
+    $(".mobile").keyup(function () {
+      if (this.value.length == this.maxLength) {
+        $(this).next('.mobile').focus();
       }
     });
   </script>

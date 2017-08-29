@@ -1,0 +1,21 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 99">
+  <title>consent</title>
+  <rect x="25.88" y="13.58" width="12.85" height="2"/>
+  <rect x="25.88" y="24.62" width="45" height="2"/>
+  <rect x="25.88" y="34.62" width="45" height="2"/>
+  <rect x="25.88" y="44.79" width="38.27" height="2"/>
+  <rect x="25.88" y="54.63" width="29.43" height="2"/>
+  <rect x="25.88" y="65.29" width="22.83" height="2"/>
+  <rect x="25.88" y="75.88" width="31.29" height="2"/>
+  <polygon points="60.77 56.67 55.31 62.13 61.67 68.49 67.13 63.03 60.77 56.67"/>
+  <rect x="61.85" y="45.45" width="24.01" height="9" transform="translate(-13.68 66.85) rotate(-45)"/>
+  <g>
+    <rect x="85.34" y="30.8" width="6.33" height="9" transform="translate(0.96 72.92) rotate(-45)"/>
+    <rect x="83.54" y="35" width="1.54" height="9" transform="translate(-3.23 71.21) rotate(-45.02)"/>
+  </g>
+  <polyline points="60.19 70.1 51.97 71.96 53.88 63.69"/>
+  <rect x="58.95" y="14.58" width="11.93" height="7.26"/>
+  <circle cx="66.78" cy="76.88" r="4.1"/>
+  <rect x="40.6" y="13.58" width="4.42" height="2"/>
+  <path d="M79.54,35.62V6.45H16.95V13H9.75V94.35H64.84V88.68h14.7V57.44h-4V84.68H20.95V10.45H75.54V35.62ZM60.84,88.68v1.67H13.75V17h3.2V88.68Z"/>
+</svg>
