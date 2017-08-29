@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: helvetica neue; }
 
@@ -21,17 +22,29 @@ body {
     margin: auto; }
 
 .header img {
-  height: 120px;
+  height: 90px;
   margin: 40px; }
 
+.progress {
+  margin: 60px; }
+  .progress .p-info {
+    font-weight: 600;
+    color: gainsboro;
+    margin-bottom: 25px; }
+  .progress .p-info::before {
+    content: '» ';
+    font-weight: 300; }
+  .progress .p-info__active {
+    color: #222; }
+
 .page-header {
-  text-align: center; }
+  text-align: center;
+  width: 35em; }
   .page-header img {
     height: 100px; }
 
 .page-form {
-  width: 35em;
-  margin: auto; }
+  width: 35em; }
   .page-form .gender-titles {
     margin-left: 1px; }
   .page-form .radio {
