@@ -65,6 +65,11 @@ body {
   .p-info__active {
     color: #222;
   }
+
+  .p-info__done {
+    color: green;
+    filter: opacity(40%);
+  }
 }
 
 .page-header {

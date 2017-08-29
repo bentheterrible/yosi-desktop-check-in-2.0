@@ -36,6 +36,9 @@ body {
     font-weight: 300; }
   .progress .p-info__active {
     color: #222; }
+  .progress .p-info__done {
+    color: green;
+    filter: opacity(40%); }
 
 .page-header {
   text-align: center;
